@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
+    <link rel="stylesheet"  href="stilocalc.css">
 </head>
-<center><body>
+<body background="numeros.jpg">
+    <div id="calc">
     <p>
         <input type="number" name="numero" id="numero1" placeholder="Numero 1">
     </p>
@@ -18,15 +20,16 @@
         <option value="multiplicacao" id="multiplicacao">Multiplicação</option>
         <option value="divisao" id="divisao">Divisão</option>
     </select>
-    <button onclick="calcular()">
+    <button id="calcular" onclick="calcular()">
         Resolver
     </button>
-    <button onclick="resetar()">
+    <button id="limpar" onclick="resetar()">
         Limpar
     </button>
     <p>
         <input type="number" name="resultado" id="resultado" readonly placeholder="Resultado">
     </p>
-    <script src="/Users/LOJA1/Documents/Marcos_projetos/calculo.js"></script>
-</body></center>
+    </div>
+    <script src="calculo.js"></script>
+</body>
 </html>
